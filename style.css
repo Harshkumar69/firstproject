@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(18, 97, 166);
+    margin: 0px;
+    width: 100%;
+}
+
+.navbar{
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 69px;
+}
+
+li a{
+    display: inline-block;
+ color: aliceblue;   
+}
+
+li{
+    display: inline;
+    padding: 20px 15px;
+    border: 2px solid white;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin: 4px;
+  
+}
+ul{
+    margin-top: 20px;
+    margin: 25px;
+}
+.need{
+    right: 0px;
+    margin-right: 0px;
+    margin: 0px;
+}
+li:hover{
+    color: black;
+    background-color: rgb(169, 115, 17);
+    cursor: pointer;
+}

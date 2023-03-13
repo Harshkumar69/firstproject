@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Extreme Fitness</title>
+	<style>
+		body{
+			font-family: 'Lora', serif;
+	color:white;
+	margin:0px;
+	padding:0px;
+	background-image:url('img3.jpg');
+}
+.left{
+	display:inline-block;
+	position:absolute;
+	left:28px;
+	top:15px;
+}
+.left div{
+	line-height:19px;
+	font-size:26px;
+	text-align:center;
+}
+.left img{
+	width:105px;
+	filter:invert(100%);
+}
+.mid{
+	display:block;
+	width:33%;
+	margin:29px auto;
+}
+.right{
+	display:inline-block;
+	position:absolute;
+	right:34px;
+	top:43px;
+}
+.navbar{
+	display:inline-block;
+}
+.navbar li{
+	display:inline-block;
+	font-size:17px;
+
+}
+.navbar li a{
+	color:white;
+	text-decoration:none;
+	padding:23px 10px;
+}
+.navbar li a:hover,.navbar li a.active{
+	color:grey;
+	text-decoration:underline;
+}
+.btn{
+	margin:0px 9px;
+	background-color:black;
+	color:white;
+	padding:4px 14px;
+	border:2px solid grey;
+	border-radius:10px;
+	font-size:13px;
+	cursor:pointer;
+	text-decoration:none;
+}
+.btn a{
+	color:white;
+	text-decoration:none;
+}
+.btn:hover{
+	background-color:grey;
+}
+.btn a:hover{
+	color:blue;
+}
+.container{
+	border:2px solid white;
+	margin:106px 380px;
+	padding:75px;
+	width:33%;
+	border-radius:28px;
+}
+.form-group input{
+	text-align:center;
+	display:block;
+	width:508px;
+	padding:1px;
+	border:2px solid black;
+	margin:15px -30px;
+	font-size:25px;
+	border-radius:8px;
+}
+.container h1{
+	text-align:center;
+}
+.container button{
+	display:block;
+	width:74%;
+	margin:20px auto;
+}
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<!--Left box for logo-->
+		<div class="left">
+           <img src="img2.jpg">
+           <div>Extreme Fitness</div>
+		</div>
+		<!--Mid box for navbar-->
+		<div class="mid">
+            <ul class="navbar">
+           	<li><a href="#" class="active">Home</a></li>
+           	<li><a href="#">About Us</a></li>
+           	<li><a href="#">Fitness Calculator</a></li>
+           	<li><a href="#">Contact Us</a></li>
+           </ul>
+		</div>
+		<!--Right box for buttons-->
+		<div class="right">
+           <button class="btn">Call Us Now</button>
+           <button class="btn">Email Us</button>
+        </div>
+	</header>
+	<div class="container">
+		<img src="img.jpg" width="500px" align="center">
+		<h1>Join the best GYM now</h1>
+		<form action="noaction.php">
+			<div class="form-group">
+			Name:<input type="text" name="name" placeholder="Enter your name">
+		    </div>
+
+		    <div class="form-group">
+			Age:<input type="number" name="age" placeholder="Enter your Age">
+		    </div>
+
+		    <div class="form-group">
+		    	<lable for="male">Male</lable>
+			<input type="radio" name="Gender" id="male" value="male" checked>
+			<lable for="Female">Female</lable>
+			<input type="radio" name="Gender" id="Female" value="Female">
+		    </div>
+
+		    <div class="form-group">
+			Locality:<input type="text" name="" placeholder="Enter your Locality">
+		    </div>
+
+		    <button class="btn"><a href="thku.html">Submit</a></button>
+		</form>
+
+	</div>
+
+</body>
+</html>

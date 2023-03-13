@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Best Online Food Delivery service in India | MyOnlineMeal.com</title>
+	<link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+	<style>
+		/*CSS Reset*/
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		html{
+			scroll-behavior:smooth;
+		}
+		/*CSS Variables*/
+		:root{
+			--navbar-height:59px;
+		}
+		/*navigation bar*/
+		#navbar{
+			display:flex;
+			align-items:center;
+			position:sticky;
+			top:0px;
+		}
+		#navbar::before{
+			content:"";
+			background-color:black;
+			position:absolute;
+			top:0px;
+			left:0px;
+			height:100%;
+			width:100%;
+			z-index:-1;
+			opacity:0.7;
+		}
+		/*Navigation bar= logo and image*/
+		#logo{
+			margin:10px 34px;
+		}
+        #logo img{
+        	height:69px;
+        	margin:3px 6px;
+        }
+		/*Navigation bar= list styling*/
+		#navbar ul{
+			display:flex;
+		}
+		#navbar ul li{
+			list-style:none;
+			font-size:1.3rem;
+		}
+		#navbar ul li a{
+			color:white;
+			display:block;
+			padding:3px 22px;
+			border-radius:20px;
+			text-decoration:none;
+		}
+		#navbar ul li a:hover{
+			color:black;
+			background-color:white;
+		}
+		/*home section*/
+		#home{
+			display:flex;
+			flex-direction:column;
+			padding:3px 200px;
+			height:550px;
+			justify-content:center;
+			align-items:center;
+		}
+		#home::before{
+			content:"";
+			position:absolute;
+			background:url('D:\photos/food2.jpg') no-repeat center center/cover;			
+			height:642px;
+			top:0px;
+			left:0px;
+			width:100%;
+			z-index:-1;
+			opacity:0.89;
+		}
+		#home h1{
+			color:white;
+			text-align:center;
+		}
+		#home p{
+			color:white;
+			text-align:center;
+			font-size:1.5rem;
+		}
+		/*Services section*/
+		#services{
+			margin:34px;
+			display:flex;
+		}
+		#services .box{
+			border:2px solid brown;
+			padding:34px;
+			margin:2px 55px;
+			border-radius:28px;
+			background:#f2f2f2;
+			margin-bottom:20px;
+		}
+		#services .box img{
+			height:160px;
+			margin:auto;
+			display:block;
+		} 
+		#services.box{
+
+		}
+		/*clients section*/
+		#client-section{
+			position:relative;
+		}
+		#client-section::before{
+			content:"";
+			position:absolute;
+			background:url('food.jpg');
+			width:100%;
+			height:100%;
+			z-index:-1;
+			opacity:0.3;
+		}
+		#clients{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		.client-item{
+			padding:34px;
+		}
+		#clients img{
+			height:124px;
+		}
+
+		/*contact section*/
+		#contact{
+			position:relative;
+		}
+		#contact::before{
+			content:"";
+			position:absolute;
+			width:100%;
+			height:100%;
+			background:url('D:\photos/food1.jpg')no-repeat center center/cover;
+			z-index:-1;
+			opacity:0.7;
+		}
+		#contact-box{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			padding-bottom:34px;
+		}
+		#contact-box textarea{
+			width:100px;
+			padding:0.5rem;
+			border-radius:9px;
+			font-size:1.1rem;
+		}
+		#contact-box form{
+			width:40%;
+		}
+		#contact-box label{
+			font-size:1.3rem;
+		}
+		footer{
+			background:black;
+			color:white;
+			padding:9px 20px;
+		}
+
+		/*Utility classes*/
+		.h-primary{
+			font-size:3.8rem;
+			padding:12px;
+		}
+		.h-secondary{
+			font-size:2.3rem;
+			padding:12px;
+		}
+		.btn{
+			padding:6px 20px;
+			border:2px solid white;
+			background-color:brown;
+			color:white;
+			margin:17px;
+			font-size:1.5rem;
+			border-radius:10px;
+			cursor:pointer;
+		}
+		.center{
+			text-align:center;
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<nav id="navbar">
+		<div id="logo">
+			<img src="D:\photos\img2.jpg" alt="MyOnlineMeal.com">
+		</div>
+		<ul>
+			<li class="item"><a href="#home">Home</a></li>
+			<li class="item"><a href="#services-container">Services</a></li>
+			<li class="item"><a href="#client-section">Our Clients</a></li>
+			<li class="item"><a href="#contact">Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<section id="home">
+		<h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius
+		</p>
+		<button class="btn">Order Now</button>
+	</section>
+
+	<section id="services-container">
+		<h1 class="h-primary center">Our Services</h1>
+		<div id="services">
+			<div class="box">
+				<img src="D:\photos\food3.jpg" alt="">
+				<h2 class="h.secondary center">Food Catering</h2>
+				<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</div>
+			<div class="box">
+				<img src="D:\photos\food5.jpg" alt="">
+				<h2 class="h.secondary center">Bulk Ordering</h2>
+				<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</div>
+			<div class="box">
+				<img src="D:\photos\food4.png" alt="">
+				<h2 class="h.secondary center">Food Ordering</h2>
+				<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="client-section">
+		<h1 class="h-primary center">Our Clients</h1>
+		<div id="clients">
+			<div class="client-item">
+			<img src="D:\photos\img5.jpg" alt="Our Client">
+		</div>
+		<div class="client-item">
+			<img src="D:\photos\hp.jpg" alt="Our Client">
+		</div>
+		<div class="client-item">
+			<img src="D:\photos\skype.png" alt="Our Client">
+		</div>
+		<div class="client-item">
+			<img src="D:\photos\hero.png" alt="Our Client">
+		</div>
+	</div>
+	</section>
+
+	<section>
+		<section id="contact">
+			<h1 class="h-primary center">Contact Us</h1>
+			<div id="contact-box">
+				<form action="">
+					<div class="form-group">
+						<lable for="name">Name:</lable>
+						<input type="text" name="name" id="name" placeholder="Enter Your Name">
+					</div>
+					<div class="form-group">
+						<lable for="Email">Email:</lable>
+						<input type="Email" name="name" id="Email" placeholder="Enter Your Email">
+					</div>
+					<div class="form-group">
+						<lable for="Phone Number">Phone Number:</lable>
+						<input type="Phone Number" name="name" id="Phone Number" placeholder="Enter Your Phone Number">
+					</div>
+					<div class="form-group">
+						<lable for="Message">Message:</lable>
+						<textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="center">
+				Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+			</div>
+		</footer>
+
+</body>
+</html>
